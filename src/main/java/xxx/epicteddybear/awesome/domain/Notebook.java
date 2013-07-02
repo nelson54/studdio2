@@ -1,5 +1,6 @@
 package xxx.epicteddybear.awesome.domain;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
 import org.joda.time.DateTime;
 
 import java.util.ArrayList;
@@ -18,7 +19,6 @@ public class Notebook {
     private String id;
     private String owner;
 
-
     private DateTime created;
     private DateTime updated;
 
@@ -26,17 +26,17 @@ public class Notebook {
 
     private List<FlashCard> flashCards;
 
+    @JsonIgnore
     public static Notebook create(String user, String title){
         String uuid = UUID.randomUUID().toString();
         DateTime created = DateTime.now();
         return new Notebook(uuid, user, created, created, title, new ArrayList<FlashCard>());
     }
 
-    public Notebook(){
-
+    public Notebook() {
     }
 
-    public Notebook(String id, String owner, DateTime created,DateTime updated, String title,
+    public Notebook(String id, String owner, DateTime created, DateTime updated, String title,
                     List<FlashCard> flashCards) {
         this.id = id;
         this.owner = owner;
@@ -45,6 +45,7 @@ public class Notebook {
         this.title = title;
         this.flashCards = flashCards;
     }
+
 
     public void addFlashCard(FlashCard card){
         this.flashCards.add(card);

@@ -10,13 +10,15 @@ import org.joda.time.DateTime;
  * To change this template use File | Settings | File Templates.
  */
 public class FlashCard {
-    private String ownerId;
 
     private DateTime created;
     private DateTime updated;
 
     private String front;
     private String back;
+
+    public FlashCard() {
+    }
 
     public FlashCard(String front, String back) {
         this.created = DateTime.now();
@@ -43,5 +45,21 @@ public class FlashCard {
         this.updated = DateTime.now();
 
         this.back = back;
+    }
+
+    public DateTime getCreated() {
+        return created;
+    }
+
+    public void setCreated(DateTime created) {
+        this.created = created;
+    }
+
+    public DateTime getUpdated() {
+        return updated;
+    }
+
+    public void setUpdated(DateTime updated) {
+        this.updated = updated;
     }
 }

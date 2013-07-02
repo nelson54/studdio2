@@ -1,0 +1,28 @@
+<h1>Add Notebook</h1>
+
+<form>
+    <p>
+        <label>Title</label><br />
+        <input type="text"ng-model="notebook.title">
+    </p>
+
+    <hr />
+
+    <h2>FlashCards</h2>
+    <div ng-repeat="flashCard in notebook.flashCards">
+        <button ng-click="removeFlashCard($index)">x</button>
+        <p>
+            <label>Front</label><br />
+            <input type="text" ng-model="flashCard.front">
+        </p>
+        <p>
+            <label>Back</label><br />
+            <input type="text" ng-model="flashCard.back">
+        </p>
+        <hr />
+    </div>
+    <button ng-click="addFlashCard()">Add Flash Card</button>
+    <hr />
+
+    <button ng-click="save(notebook)">Save</button>
+</form>

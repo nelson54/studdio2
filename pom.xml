@@ -161,6 +161,12 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/js/dist/</directory>
+                <targetPath>${basedir}/target/flashcards/resources/</targetPath>
+            </resource>
+        </resources>
         <finalName>flashcards</finalName>
         <plugins>
 
