@@ -1,0 +1,177 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.2.32
+3 info using node@v0.10.12
+4 verbose node symlink /usr/bin/node
+5 verbose read json /home/dnelson/Projects/flashcards/src/main/js/package.json
+6 warn package.json js@0.0.0 No repository field.
+7 warn package.json js@0.0.0 No readme data.
+8 verbose readDependencies using package.json deps
+9 verbose install where, deps [ '/home/dnelson/Projects/flashcards/src/main/js',
+9 verbose install   [ 'grunt',
+9 verbose install     'grunt-contrib-copy',
+9 verbose install     'grunt-contrib-concat',
+9 verbose install     'grunt-contrib-coffee',
+9 verbose install     'grunt-contrib-uglify',
+9 verbose install     'grunt-contrib-compass',
+9 verbose install     'grunt-contrib-jshint',
+9 verbose install     'grunt-contrib-cssmin',
+9 verbose install     'grunt-contrib-connect',
+9 verbose install     'grunt-contrib-clean',
+9 verbose install     'grunt-contrib-htmlmin',
+9 verbose install     'grunt-contrib-imagemin',
+9 verbose install     'grunt-contrib-watch',
+9 verbose install     'grunt-usemin',
+9 verbose install     'grunt-rev',
+9 verbose install     'grunt-karma',
+9 verbose install     'grunt-open',
+9 verbose install     'grunt-concurrent',
+9 verbose install     'matchdep',
+9 verbose install     'connect-livereload',
+9 verbose install     'grunt-google-cdn',
+9 verbose install     'grunt-ngmin' ] ]
+10 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/package.json
+11 info preinstall js@0.0.0
+12 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/connect-livereload/package.json
+13 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt/package.json
+14 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-cli/package.json
+15 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-concurrent/package.json
+16 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-clean/package.json
+17 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-coffee/package.json
+18 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-compass/package.json
+19 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-concat/package.json
+20 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-connect/package.json
+21 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-copy/package.json
+22 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-cssmin/package.json
+23 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-htmlmin/package.json
+24 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-imagemin/package.json
+25 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-jshint/package.json
+26 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-uglify/package.json
+27 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-watch/package.json
+28 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-google-cdn/package.json
+29 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-karma/package.json
+30 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-ngmin/package.json
+31 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-open/package.json
+32 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-rev/package.json
+33 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-usemin/package.json
+34 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/jshint/package.json
+35 verbose read json /home/dnelson/Projects/flashcards/src/main/js/node_modules/matchdep/package.json
+36 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/package.json
+37 verbose readDependencies using package.json deps
+38 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/connect-livereload/package.json
+39 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt/package.json
+40 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-cli/package.json
+41 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-concurrent/package.json
+42 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-clean/package.json
+43 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-coffee/package.json
+44 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-compass/package.json
+45 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-concat/package.json
+46 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-connect/package.json
+47 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-copy/package.json
+48 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-cssmin/package.json
+49 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-htmlmin/package.json
+50 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-imagemin/package.json
+51 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-jshint/package.json
+52 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-uglify/package.json
+53 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-contrib-watch/package.json
+54 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-google-cdn/package.json
+55 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-karma/package.json
+56 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-ngmin/package.json
+57 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-open/package.json
+58 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-rev/package.json
+59 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-usemin/package.json
+60 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/jshint/package.json
+61 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/matchdep/package.json
+62 verbose already installed skipping grunt-contrib-concat@~0.3.0 /home/dnelson/Projects/flashcards/src/main/js
+63 verbose already installed skipping grunt@~0.4.1 /home/dnelson/Projects/flashcards/src/main/js
+64 verbose already installed skipping grunt-contrib-copy@~0.4.1 /home/dnelson/Projects/flashcards/src/main/js
+65 verbose already installed skipping grunt-contrib-coffee@~0.7.0 /home/dnelson/Projects/flashcards/src/main/js
+66 verbose already installed skipping grunt-contrib-uglify@~0.2.0 /home/dnelson/Projects/flashcards/src/main/js
+67 verbose already installed skipping grunt-contrib-compass@~0.3.0 /home/dnelson/Projects/flashcards/src/main/js
+68 verbose already installed skipping grunt-contrib-jshint@~0.6.0 /home/dnelson/Projects/flashcards/src/main/js
+69 verbose already installed skipping grunt-contrib-cssmin@~0.6.0 /home/dnelson/Projects/flashcards/src/main/js
+70 verbose already installed skipping grunt-contrib-connect@~0.3.0 /home/dnelson/Projects/flashcards/src/main/js
+71 verbose already installed skipping grunt-contrib-htmlmin@~0.1.3 /home/dnelson/Projects/flashcards/src/main/js
+72 verbose already installed skipping grunt-contrib-clean@~0.4.1 /home/dnelson/Projects/flashcards/src/main/js
+73 verbose already installed skipping grunt-contrib-imagemin@~0.1.4 /home/dnelson/Projects/flashcards/src/main/js
+74 verbose already installed skipping grunt-contrib-watch@~0.4.0 /home/dnelson/Projects/flashcards/src/main/js
+75 verbose already installed skipping grunt-usemin@~0.1.11 /home/dnelson/Projects/flashcards/src/main/js
+76 verbose already installed skipping grunt-rev@~0.1.0 /home/dnelson/Projects/flashcards/src/main/js
+77 verbose already installed skipping grunt-open@~0.2.0 /home/dnelson/Projects/flashcards/src/main/js
+78 verbose already installed skipping grunt-karma@~0.4.3 /home/dnelson/Projects/flashcards/src/main/js
+79 verbose already installed skipping grunt-concurrent@~0.3.0 /home/dnelson/Projects/flashcards/src/main/js
+80 verbose already installed skipping matchdep@~0.1.2 /home/dnelson/Projects/flashcards/src/main/js
+81 verbose already installed skipping connect-livereload@~0.2.0 /home/dnelson/Projects/flashcards/src/main/js
+82 verbose already installed skipping grunt-google-cdn@~0.2.0 /home/dnelson/Projects/flashcards/src/main/js
+83 verbose already installed skipping grunt-ngmin@~0.0.2 /home/dnelson/Projects/flashcards/src/main/js
+84 silly resolved []
+85 info build /home/dnelson/Projects/flashcards/src/main/js
+86 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/package.json
+87 verbose linkStuff [ false,
+87 verbose linkStuff   false,
+87 verbose linkStuff   false,
+87 verbose linkStuff   '/home/dnelson/Projects/flashcards/src/main' ]
+88 info linkStuff js@0.0.0
+89 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/package.json
+90 verbose linkBins js@0.0.0
+91 verbose linkMans js@0.0.0
+92 verbose rebuildBundles js@0.0.0
+93 verbose rebuildBundles [ '.bin',
+93 verbose rebuildBundles   'connect-livereload',
+93 verbose rebuildBundles   'grunt',
+93 verbose rebuildBundles   'grunt-cli',
+93 verbose rebuildBundles   'grunt-concurrent',
+93 verbose rebuildBundles   'grunt-contrib-clean',
+93 verbose rebuildBundles   'grunt-contrib-coffee',
+93 verbose rebuildBundles   'grunt-contrib-compass',
+93 verbose rebuildBundles   'grunt-contrib-concat',
+93 verbose rebuildBundles   'grunt-contrib-connect',
+93 verbose rebuildBundles   'grunt-contrib-copy',
+93 verbose rebuildBundles   'grunt-contrib-cssmin',
+93 verbose rebuildBundles   'grunt-contrib-htmlmin',
+93 verbose rebuildBundles   'grunt-contrib-imagemin',
+93 verbose rebuildBundles   'grunt-contrib-jshint',
+93 verbose rebuildBundles   'grunt-contrib-uglify',
+93 verbose rebuildBundles   'grunt-contrib-watch',
+93 verbose rebuildBundles   'grunt-google-cdn',
+93 verbose rebuildBundles   'grunt-karma',
+93 verbose rebuildBundles   'grunt-ngmin',
+93 verbose rebuildBundles   'grunt-open',
+93 verbose rebuildBundles   'grunt-rev',
+93 verbose rebuildBundles   'grunt-usemin',
+93 verbose rebuildBundles   'jshint',
+93 verbose rebuildBundles   'matchdep' ]
+94 verbose rebuild bundle /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-cli
+95 info build /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-cli
+96 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/node_modules/grunt-cli/package.json
+97 info preinstall grunt-cli@0.1.9
+98 verbose linkStuff [ false,
+98 verbose linkStuff   false,
+98 verbose linkStuff   false,
+98 verbose linkStuff   '/home/dnelson/Projects/flashcards/src/main/js/node_modules' ]
+99 info linkStuff grunt-cli@0.1.9
+100 verbose from cache /home/dnelson/Projects/flashcards/src/main/js/package.json
+101 warn prefer global grunt-cli@0.1.9 should be installed with -g
+102 verbose linkBins grunt-cli@0.1.9
+103 verbose link bins [ { grunt: 'bin/grunt' },
+103 verbose link bins   '/home/dnelson/Projects/flashcards/src/main/js/node_modules/.bin',
+103 verbose link bins   false ]
+104 verbose linkMans grunt-cli@0.1.9
+105 verbose rebuildBundles grunt-cli@0.1.9
+106 verbose rebuildBundles [ '.bin', 'findup-sync', 'nopt', 'resolve' ]
+107 error Error: EACCES, unlink '/home/dnelson/Projects/flashcards/src/main/js/node_modules/.bin/grunt'
+107 error  { [Error: EACCES, unlink '/home/dnelson/Projects/flashcards/src/main/js/node_modules/.bin/grunt']
+107 error   errno: 3,
+107 error   code: 'EACCES',
+107 error   path: '/home/dnelson/Projects/flashcards/src/main/js/node_modules/.bin/grunt' }
+108 error Please try running this command again as root/Administrator.
+109 error System Linux 3.8.0-23-generic
+110 error command "/usr/bin/node" "/usr/bin/npm" "install"
+111 error cwd /home/dnelson/Projects/flashcards/src/main/js
+112 error node -v v0.10.12
+113 error npm -v 1.2.32
+114 error path /home/dnelson/Projects/flashcards/src/main/js/node_modules/.bin/grunt
+115 error code EACCES
+116 error errno 3
+117 error stack Error: EACCES, unlink '/home/dnelson/Projects/flashcards/src/main/js/node_modules/.bin/grunt'
+118 verbose exit [ 3, true ]
