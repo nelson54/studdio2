@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Login Page</title>
@@ -17,7 +17,7 @@
 
 <c:if test="${not empty error}">
     <div class="errorblock">
-        Your login attempt was not successful, try again.<br /> Caused :
+        Your login attempt was not successful, try again.<br/> Caused :
 
     </div>
 </c:if>
@@ -33,16 +33,16 @@
         </tr>
         <tr>
             <td>Password:</td>
-            <td><input type='password' name='j_password' />
+            <td><input type='password' name='j_password'/>
             </td>
         </tr>
         <tr>
             <td colspan='2'><input name="submit" type="submit"
-                                   value="submit" />
+                                   value="submit"/>
             </td>
         </tr>
         <tr>
-            <td colspan='2'><input name="reset" type="reset" />
+            <td colspan='2'><input name="reset" type="reset"/>
             </td>
         </tr>
     </table>
