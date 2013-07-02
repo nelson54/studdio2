@@ -4,36 +4,95 @@ angular.module('jsApp')
     .controller('NotebookListCtrl', function ($scope, notebooks) {
         $scope.notebooks = notebooks.data;
     })
-    .controller('NewNotebookCtrl', ['$scope','$http', function ($scope,$http) {
-        $scope.notebook = { flashCards: [] };
+    .controller('NewNotebookCtrl', ['$scope', '$resource', function ($scope, $resource) {
+        $scope.notebook = { id: 'new', flashCards: [] };
 
-        $scope.addFlashCard = function(){
+        $scope.addFlashCard = function () {
             $scope.notebook.flashCards.push({});
 
         }
 
-        $scope.removeFlashCard = function(index){
+        $scope.removeFlashCard = function (index) {
             $scope.notebook.flashCards.splice(index, 1);
         }
 
-        $scope.save = function(notebook){
+        $scope.save = function (book) {
 
-            notebook.created = Date.now();
+            book.created = Date.now();
 
-            for ( var card in notebook.flashCards){
-                delete notebook.flashCards[card]['$$hashKey'];
+            for (var card in book.flashCards) {
+                delete book.flashCards[card]['$$hashKey'];
             }
+            var Notebook = $resource('/api/notebook/:id', { id: '@id' }, { update: { method: 'PUT' } });
 
-            $http( { url: '/notebooks/new', method: 'get', params: {json: ""+JSON.stringify(notebook)} });
+            var notebook = new Notebook(book);
+
+            notebook.$save();
+
+            //$http( { url: '/notebooks/new', method: 'get', params: {json: ""+JSON.stringify(notebook)} });
         }
     }])
-    .config(['$routeProvider', function($routeProvider) {
+    .controller('UpdateNotebookCtrl', ['$scope', '$resource', '$routeParams', function ($scope, $resource, $routeParams) {
+        var Notebook = $resource('/api/notebook/:id', { id: '@id' }, { update: { method: 'PUT' } });
+
+        $scope.notebook = Notebook.get({id: $routeParams['id']});
+
+        $scope.addFlashCard = function () {
+            $scope.notebook.flashCards.push({});
+
+        }
+
+        $scope.removeFlashCard = function (index) {
+            $scope.notebook.flashCards.splice(index, 1);
+        }
+
+        $scope.save = function (book) {
+
+            book.updated = Date.now();
+
+            for (var card in book.flashCards) {
+                delete book.flashCards[card]['$$hashKey'];
+            }
+
+            book.$save();
+
+        }
+    }])
+    .controller('ViewNotebookCtrl', ['$scope', '$resource', '$routeParams', function ($scope, $resource, $routeParams) {
+        var Notebook = $resource('/api/notebook/:id', { id: '@id' }, { update: { method: 'PUT' } });
+
+        $scope.notebook = Notebook.get({id: $routeParams['id']});
+
+        $scope.currentId = 0;
+
+        $scope.addFlashCard = function () {
+            $scope.notebook.flashCards.push({});
+
+        }
+
+        $scope.removeFlashCard = function (index) {
+            $scope.notebook.flashCards.splice(index, 1);
+        }
+
+        $scope.save = function (book) {
+
+            book.updated = Date.now();
+
+            for (var card in book.flashCards) {
+                delete book.flashCards[card]['$$hashKey'];
+            }
+
+            book.$save();
+
+        }
+    }])
+    .config(['$routeProvider', function ($routeProvider) {
         $routeProvider
             .when('/notebooks', {
                 templateUrl: 'views/notebooks.html',
 
                 resolve: {
-                    notebooks: ['$http', function($http) {
+                    notebooks: ['$http', function ($http) {
                         return $http.get('/notebooks')
                     }]
                 },
@@ -41,6 +100,13 @@ angular.module('jsApp')
             }).when('/notebook/new', {
                 templateUrl: 'views/notebookForm.html',
                 controller: 'NewNotebookCtrl'
+            }).when('/notebook/:id/edit', {
+                templateUrl: 'views/notebookForm.html',
+                controller: 'UpdateNotebookCtrl'
+            })
+            .when('/notebook/:id', {
+                templateUrl: 'views/flashCards.html',
+                controller: 'ViewNotebookCtrl'
             })
 
     }]);
