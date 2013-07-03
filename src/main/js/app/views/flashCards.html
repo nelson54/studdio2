@@ -1,0 +1,12 @@
+<h1>{{notebook.title}}</h1>
+<article class="flash-card" ng-repeat="flashCard in notebook.flashCards" ng-show="$index == currentId">
+    <section class="flash-card-front">{{flashCard.front}}</section>
+    <section class="flash-card-back">{{flashCard.back}}</section>
+</article>
+
+<p>
+    <button ng-disabled="currentId == 0" ng-click="currentId = (currentId - 1)"> &lt; </button>
+    <button class="flash-card-edit" ng-click="editCard()">Edit</button>
+    <button ng-disabled="currentId == notebook.flashCards.length - 1" ng-click="currentId = (currentId + 1)">
+        &gt; </button>
+</p>
